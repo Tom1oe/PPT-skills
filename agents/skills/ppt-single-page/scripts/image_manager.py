@@ -18,7 +18,7 @@ from PIL import Image
 # 常量
 # ============================================================
 
-# 标准宽高比 → (宽, 高) 映射表
+# 标准宽高比 → (宽, 高) 映射表（裁切缩放参考）
 ASPECT_RATIO_MAP: Dict[str, Tuple[int, int]] = {
     "1:1":  (1024, 1024),
     "3:4":  (768, 1024),
@@ -27,6 +27,17 @@ ASPECT_RATIO_MAP: Dict[str, Tuple[int, int]] = {
     "16:9": (1024, 576),
     "2:3":  (682, 1024),
     "3:2":  (1024, 682),
+}
+
+# ImageGen 工具要求的显式像素尺寸（总像素数 >= 3,686,400）
+IMAGEGEN_SIZE_MAP: Dict[str, str] = {
+    "1:1":  "2048x2048",
+    "3:4":  "1920x2560",
+    "4:3":  "2560x1920",
+    "9:16": "1440x2560",
+    "16:9": "2560x1440",
+    "2:3":  "1706x2560",
+    "3:2":  "2560x1706",
 }
 
 
@@ -54,6 +65,7 @@ class ImageTask:
     height: float                        # 区域高度（英寸）
     image_type: str = "photo"            # photo | chart | icon | decorator
     aspect_ratio: str = ""               # 匹配的标准比例
+    imagegen_size: str = ""              # ImageGen 传参尺寸 (如 "1440x2560")
     target_width: int = 0                # 目标像素宽度
     target_height: int = 0              # 目标像素高度
     description: str = ""                # 图片描述（用于生图 prompt）
@@ -135,6 +147,7 @@ class ImageManager:
             height=height,
             image_type=image_type,
             aspect_ratio=ratio,
+            imagegen_size=IMAGEGEN_SIZE_MAP.get(ratio, "2560x1440"),
             target_width=target_w,
             target_height=target_h,
             description=description,
