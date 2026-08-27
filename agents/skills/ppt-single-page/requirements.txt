@@ -1,0 +1,6 @@
+# PPT 单页智能生成 - 依赖清单
+# 仅需两个纯 Python 包，跨平台兼容 (Windows/macOS/Linux)
+# 安装: pip install -r requirements.txt
+
+python-pptx>=1.0.0
+Pillow>=10.0.0

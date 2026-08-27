@@ -1,0 +1,20 @@
+{
+  "page_type": "data",
+  "style": "business_blue",
+  "layout": "pyramid_hierarchy",
+  "title": "组织架构与能力模型",
+  "items": [
+    {
+      "title": "基础执行层 (33%)",
+      "description": "负责日常运营与基础交付，遵循标准规范操作。"
+    },
+    {
+      "title": "流程协同层 (66%)",
+      "description": "跨部门敏捷协同与资源调配，确保项目按期落地。"
+    },
+    {
+      "title": "战略决策层 (99%)",
+      "description": "负责企业中长期战略规划、技术创新与品牌建设。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "page_type": "data",
+  "style": "business_blue",
+  "layout": "data_stats",
+  "title": "年度工作汇报",
+  "section_number": "01",
+  "items": [
+    {
+      "title": "Click to add a subtitle",
+      "description": "单击添加小标题\n请尽量言简意赅的阐述观点\n\n单击此处输入你的正文，文字是您思想的提炼，为了最终演示发布的良好效果。"
+    },
+    {
+      "title": "Click to add a subtitle",
+      "description": "单击添加小标题\n\n单击此处输入你的正文，为了最终演示发布的良好效果，请尽量言简意赅的阐述观点。"
+    }
+  ],
+  "stats": [
+    {
+      "value": "68%",
+      "label": "添加标题",
+      "chart": {
+        "chart_type": "donut",
+        "value": 68,
+        "label": "68%"
+      }
+    },
+    {
+      "value": "68%",
+      "label": "添加标题",
+      "chart": {
+        "chart_type": "donut",
+        "value": 68,
+        "label": "68%"
+      }
+    }
+  ]
+}

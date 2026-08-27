@@ -1,0 +1,55 @@
+{
+  "page_type": "content",
+  "style": "business_blue",
+  "layout": "content_grid_2x3",
+  "title": "年度工作汇报",
+  "subtitle": "2024年度总结与规划",
+  "section_number": "01",
+  "items": [
+    {
+      "number": "01",
+      "title": "项目推进",
+      "description": "全年共完成12个重点项目的交付，项目按期完成率达到95%，客户满意度评分4.8/5.0。",
+      "icon": "check"
+    },
+    {
+      "number": "02",
+      "title": "团队建设",
+      "description": "新增核心成员8人，团队规模扩大至35人，组织了季度团建活动和技能培训计划。",
+      "icon": "person"
+    },
+    {
+      "number": "03",
+      "title": "技术创新",
+      "description": "引入AI辅助开发流程，提升开发效率30%，申请技术专利2项，发表技术文章5篇。",
+      "icon": "gear"
+    },
+    {
+      "number": "04",
+      "title": "市场拓展",
+      "description": "新开拓客户15家，年度营收增长40%，市场覆盖范围从3个省份扩展至8个省份。",
+      "icon": "chart_bar"
+    },
+    {
+      "number": "05",
+      "title": "质量管控",
+      "description": "建立完善的代码审查机制，线上故障率降低60%，平均修复时间缩短至2小时内。",
+      "icon": "star"
+    },
+    {
+      "number": "06",
+      "title": "未来规划",
+      "description": "计划在2025年实现产品国际化，目标进入东南亚市场，预计营收增长50%。",
+      "icon": "arrow_right"
+    }
+  ],
+  "images": [
+    {
+      "type": "decorative",
+      "description": "蓝天白云下的雪山风景，专业摄影风格",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "charts": [],
+  "stats": []
+}

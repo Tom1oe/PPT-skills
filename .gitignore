@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output / generated assets
+output_images/
+output_images_*/
+test_output/
+*.pptx
+TeleAgent的工作空间/
+.ppt_gen_state.json
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE / OS specific
+.DS_Store
+.vscode/
+.idea/
